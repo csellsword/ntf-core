@@ -16,6 +16,6 @@ jobs:
     - name: scripted-build
       run: |
         pwd
-        ls
+        ls -a
         ./.github/scripts/build.sh
       shell: bash
