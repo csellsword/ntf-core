@@ -10,10 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
   
-  steps:
-  - name: checkout
-    uses: actions/checkout@v3
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
 
-  - name: scripted-build
-    run: ./.github/scripts/build.sh
-    shell: bash
+    - name: scripted-build
+      run: ./.github/scripts/build.sh
+      shell: bash
