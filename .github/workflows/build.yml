@@ -17,5 +17,5 @@ jobs:
       run: |
         pwd
         ls -a
-        ./.github/scripts/build.sh
+        $GITHUB_WORKSPACE/.github/scripts/build.sh
       shell: bash
