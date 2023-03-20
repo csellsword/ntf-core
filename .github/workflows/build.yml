@@ -1,0 +1,21 @@
+name: build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: scripted-build
+      run: |
+        pwd
+        ls -a
+        $GITHUB_WORKSPACE/.github/workflows/scripts/build.sh
+      shell: bash
